@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4e4dd">
+    <meta name="description" content="A soft, moonlit bedroom for Mochi, made with love by Nash.">
+    <title>Mochi’s Little Sanctuary</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ctext y='.9em' font-size='32'%3E%E2%98%BE%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="./sanctuary.css">
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body>
+    <svg class="svg-library" aria-hidden="true" focusable="false">
+      <symbol id="bear" viewBox="0 0 220 240">
+        <ellipse cx="110" cy="221" rx="72" ry="11" fill="#543c37" opacity=".12"/>
+        <ellipse cx="65" cy="48" rx="29" ry="32" fill="#aa7255"/>
+        <ellipse cx="155" cy="48" rx="29" ry="32" fill="#aa7255"/>
+        <ellipse cx="65" cy="49" rx="16" ry="19" fill="#d59b7c"/>
+        <ellipse cx="155" cy="49" rx="16" ry="19" fill="#d59b7c"/>
+        <path d="M42 94c0-42 27-68 68-68s68 26 68 68v80c0 31-30 48-68 48s-68-17-68-48z" fill="#bd8464"/>
+        <path d="M54 78c9-25 29-38 56-38s47 13 56 38c-21-13-40-18-56-18s-35 5-56 18z" fill="#d39a79" opacity=".75"/>
+        <ellipse cx="84" cy="106" rx="5" ry="7" fill="#49332f"/>
+        <ellipse cx="136" cy="106" rx="5" ry="7" fill="#49332f"/>
+        <ellipse cx="68" cy="121" rx="10" ry="6" fill="#dc9d98" opacity=".75"/>
+        <ellipse cx="152" cy="121" rx="10" ry="6" fill="#dc9d98" opacity=".75"/>
+        <ellipse cx="110" cy="130" rx="29" ry="23" fill="#f1d1bb"/>
+        <ellipse cx="110" cy="124" rx="8" ry="6" fill="#513a35"/>
+        <path d="M103 136q7 7 14 0" fill="none" stroke="#513a35" stroke-width="3" stroke-linecap="round"/>
+        <ellipse cx="110" cy="178" rx="42" ry="39" fill="#edc9ae"/>
+        <path d="M51 159c-19 4-28 19-21 32 6 11 17 10 30 3m109-35c19 4 28 19 21 32-6 11-17 10-30 3" fill="#bd8464" stroke="#a87055" stroke-width="4"/>
+        <ellipse cx="78" cy="203" rx="25" ry="17" fill="#a87055"/>
+        <ellipse cx="142" cy="203" rx="25" ry="17" fill="#a87055"/>
+        <path d="M99 174q11-8 22 0l-3 17h-16z" fill="#d98f9d"/>
+        <path d="M104 178h12m-6-5v12" stroke="#f8e4dc" stroke-width="2" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="bear-sleep" viewBox="0 0 220 240">
+        <ellipse cx="110" cy="222" rx="72" ry="10" fill="#543c37" opacity=".1"/>
+        <ellipse cx="64" cy="50" rx="27" ry="30" fill="#aa7255"/>
+        <ellipse cx="156" cy="50" rx="27" ry="30" fill="#aa7255"/>
+        <path d="M42 94c0-42 27-68 68-68s68 26 68 68v80c0 31-30 48-68 48s-68-17-68-48z" fill="#bd8464"/>
+        <ellipse cx="64" cy="51" rx="14" ry="17" fill="#d59b7c"/>
+        <ellipse cx="156" cy="51" rx="14" ry="17" fill="#d59b7c"/>
+        <path d="M76 108q8 7 16 0m36 0q8 7 16 0" fill="none" stroke="#49332f" stroke-width="3" stroke-linecap="round"/>
+        <ellipse cx="110" cy="130" rx="28" ry="20" fill="#f1d1bb"/>
+        <ellipse cx="110" cy="125" rx="7" ry="5" fill="#513a35"/>
+        <path d="M104 136q6 5 12 0" fill="none" stroke="#513a35" stroke-width="2.5" stroke-linecap="round"/>
+        <ellipse cx="110" cy="179" rx="42" ry="38" fill="#edc9ae"/>
+        <path d="M47 161q-26 6-19 26 4 12 26 7m119-33q26 6 19 26-4 12-26 7" fill="#bd8464"/>
+        <ellipse cx="79" cy="204" rx="27" ry="16" fill="#a87055"/>
+        <ellipse cx="141" cy="204" rx="27" ry="16" fill="#a87055"/>
+        <path d="M95 177q15-12 30 0l-4 16h-22z" fill="#d98f9d"/>
+      </symbol>
+    </svg>
+
+    <a class="skip-link" href="#main">Skip to the cozy part</a>
+    <div class="night-sky" aria-hidden="true">
+      <span class="star star-one"></span><span class="star star-two"></span><span class="star star-three"></span>
+      <span class="star star-four"></span><span class="star star-five"></span>
+      <span class="moon"></span><span class="cloud cloud-one"></span><span class="cloud cloud-two"></span>
+    </div>
+
+    <header class="topbar">
+      <a class="wordmark" href="#home" data-go="home" aria-label="Mochi’s Little Sanctuary, home">
+        <span class="wordmark-mark" aria-hidden="true">m</span>
+        <span>Mochi’s Little Sanctuary</span>
+      </a>
+      <button class="icon-button settings-trigger" type="button" aria-label="Open settings" aria-haspopup="dialog">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8.2a3.8 3.8 0 1 0 0 7.6 3.8 3.8 0 0 0 0-7.6Z"/><path d="m19.4 13.5 1.1.9-1.7 3-1.3-.5a7.4 7.4 0 0 1-1.6.9l-.2 1.4h-3.4l-.2-1.4a7.4 7.4 0 0 1-1.6-.9l-1.3.5-1.7-3 1.1-.9a7.5 7.5 0 0 1 0-1.9l-1.1-.9 1.7-3 1.3.5a7.4 7.4 0 0 1 1.6-.9l.2-1.4h3.4l.2 1.4a7.4 7.4 0 0 1 1.6.9l1.3-.5 1.7 3-1.1.9a7.5 7.5 0 0 1 0 1.9Z"/></svg>
+      </button>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <section class="screen active" id="screen-home" data-screen="home" aria-labelledby="home-title">
+        <div class="home-layout">
+          <div class="home-copy">
+            <p class="eyebrow"><span class="eyebrow-line"></span> A little place to land</p>
+            <h1 id="home-title">Hi, Mochi. <span>💗</span></h1>
+            <p class="home-reassurance" data-message="homeReassurance"></p>
+            <p class="choice-prompt">What would feel good right now?</p>
+            <div class="choice-list" aria-label="Choose what you need">
+              <button class="choice-button" type="button" data-action="grounding"><span class="choice-icon icon-cloud" aria-hidden="true"></span><span class="choice-copy"><strong>I feel scared</strong><small>Let’s feel grounded.</small></span><span class="choice-arrow" aria-hidden="true">↗</span></button>
+              <button class="choice-button" type="button" data-action="letter-list"><span class="choice-icon icon-envelope" aria-hidden="true"></span><span class="choice-copy"><strong>I need Nash</strong><small>Open a little letter.</small></span><span class="choice-arrow" aria-hidden="true">↗</span></button>
+              <button class="choice-button" type="button" data-action="quiet"><span class="choice-icon icon-moon" aria-hidden="true"></span><span class="choice-copy"><strong>Stay with me</strong><small>A quiet moment together.</small></span><span class="choice-arrow" aria-hidden="true">↗</span></button>
+              <button class="choice-button" type="button" data-action="bedtime"><span class="choice-icon icon-star" aria-hidden="true"></span><span class="choice-copy"><strong>Help me rest</strong><small>Ease toward sleep.</small></span><span class="choice-arrow" aria-hidden="true">↗</span></button>
+            </div>
+          </div>
+          <div class="room-illustration" aria-label="A warm caramel bear tucked into a moonlit bedroom">
+            <div class="window-frame"><div class="window-moon"></div><span class="window-star ws-one"></span><span class="window-star ws-two"></span><span class="window-star ws-three"></span><div class="window-cloud"></div></div>
+            <div class="wall-shelf"><span class="shelf-book"></span><span class="shelf-book book-two"></span><span class="little-vase"></span></div>
+            <div class="room-lamp"><span class="lamp-shade"></span><span class="lamp-stem"></span><span class="lamp-base"></span></div>
+            <div class="bed-frame"><div class="bed-head"></div><div class="bed-pillow pillow-a"></div><div class="bed-pillow pillow-b"></div><div class="quilt"></div><svg class="hero-bear" viewBox="0 0 220 240" role="img" aria-label="Mochi’s soft caramel teddy bear"><use href="#bear"></use></svg><div class="quilt-front"></div></div>
+            <div class="bedside-table"><span class="drawer"></span><span class="table-leg leg-a"></span><span class="table-leg leg-b"></span></div>
+            <span class="floating-heart">♡</span><span class="scene-sparkle sparkle-a">✦</span><span class="scene-sparkle sparkle-b">✧</span>
+            <p class="room-caption">your room, your pace</p>
+          </div>
+        </div>
+        <footer class="home-footer"><span>No rush, sweetheart. You can change your mind anytime.</span></footer>
+      </section>
+
+      <section class="screen" id="screen-grounding" data-screen="grounding" aria-labelledby="grounding-title" hidden>
+        <div class="simple-layout grounding-layout">
+          <div class="screen-heading"><p class="eyebrow">One small moment</p><h1 id="grounding-title">You’re here, right now.</h1><p class="screen-intro">That felt scary. You don’t have to solve it or push the feeling away. Let’s gently notice the room you’re in.</p></div>
+          <article class="prompt-card">
+            <div class="prompt-progress"><span id="prompt-count">A gentle prompt</span><span id="prompt-dots" aria-label="Prompt progress"></span></div>
+            <div class="prompt-art" aria-hidden="true"><span class="prompt-orbit"></span><span class="prompt-moon"></span><span class="prompt-star">✦</span><svg class="prompt-bear" viewBox="0 0 220 240"><use href="#bear"></use></svg></div>
+            <p class="prompt-text" id="prompt-text" aria-live="polite"></p>
+            <div class="prompt-actions"><button class="button button-primary" id="next-prompt" type="button">Next</button><button class="text-button" type="button" data-action="quiet">I’d rather just sit quietly</button></div>
+          </article>
+          <button class="back-link" type="button" data-go="home">← Back to bedroom</button>
+        </div>
+      </section>
+
+      <section class="screen" id="screen-grounding-end" data-screen="grounding-end" aria-labelledby="ground-end-title" hidden>
+        <div class="simple-layout">
+          <div class="ending-art"><svg class="ending-bear" viewBox="0 0 220 240" aria-hidden="true"><use href="#bear"></use></svg><span class="ending-star">✧</span></div>
+          <p class="eyebrow">That was enough</p><h1 id="ground-end-title">You can stop right here.</h1>
+          <p class="screen-intro" data-message="groundingEnd"></p>
+          <div class="button-row"><button class="button button-primary" type="button" data-action="breathing">Try a soft breath</button><button class="button button-secondary" type="button" data-go="home">Back to bedroom</button></div>
+        </div>
+      </section>
+
+      <section class="screen" id="screen-breathing" data-screen="breathing" aria-labelledby="breathing-title" hidden>
+        <div class="simple-layout breathing-layout">
+          <p class="eyebrow">No counting, no hurry</p><h1 id="breathing-title">Breathe with your little bear.</h1>
+          <p class="screen-intro">Let your breathing stay natural. You can stop or look away at any time.</p>
+          <div class="breath-stage"><div class="breath-orb" aria-hidden="true"><span class="orb-inner"></span><span class="orb-star">✦</span></div><svg class="breathing-bear" viewBox="0 0 220 240" aria-hidden="true"><use href="#bear-sleep"></use></svg><p class="breath-caption" id="breath-caption">Breathe in gently, if you like.</p></div>
+          <div class="button-row"><button class="button button-secondary" id="breath-toggle" type="button">Pause</button><button class="button button-primary" type="button" data-go="home">Back to bedroom</button></div>
+          <p class="static-note" id="motion-note" hidden>Breathing animation is off. You can rest here, or come back to the bedroom.</p>
+        </div>
+      </section>
+
+      <section class="screen" id="screen-letters" data-screen="letters" aria-labelledby="letters-title" hidden>
+        <div class="simple-layout letter-list-layout">
+          <p class="eyebrow">A letter for you, Mochi.</p><h1 id="letters-title">A little piece of love from Nash.</h1>
+          <p class="screen-intro">Choose whichever one sounds like what you need tonight.</p>
+          <div class="letter-bear" aria-hidden="true"><svg viewBox="0 0 220 240"><use href="#bear"></use></svg><span>♥</span></div>
+          <div class="letter-options" id="letter-options"></div>
+          <button class="back-link" type="button" data-go="home">← Back to bedroom</button>
+        </div>
+      </section>
+
+      <section class="screen" id="screen-letter" data-screen="letter" aria-labelledby="letter-title" hidden>
+        <div class="simple-layout opened-letter-layout">
+          <div class="envelope-wrap" id="envelope-wrap" aria-hidden="true"><div class="envelope"><div class="envelope-paper"></div><div class="envelope-flap"></div><span class="envelope-seal">♥</span></div></div>
+          <svg class="letter-open-bear" viewBox="0 0 220 240" aria-hidden="true"><use href="#bear"></use></svg>
+          <article class="letter-paper" id="letter-paper">
+            <p class="letter-from">A little piece of love from Nash.</p><p class="letter-subheading">A letter for you, Mochi.</p><h1 id="letter-title"></h1><p class="letter-body" id="letter-body"></p>
+          </article>
+          <div class="button-row"><button class="button button-primary" type="button" data-action="another-letter">Another little hug</button><button class="button button-secondary" type="button" data-go="home">Back to bedroom</button></div>
+        </div>
+      </section>
+
+      <section class="screen" id="screen-quiet" data-screen="quiet" aria-labelledby="quiet-title" hidden>
+        <div class="quiet-layout">
+          <div class="quiet-copy"><p class="eyebrow">Nothing to do</p><h1 id="quiet-title">We can sit here awhile.</h1><p class="quiet-reassurance" data-message="quietReassurance"></p></div>
+          <div class="quiet-scene" aria-hidden="true"><div class="quiet-window"><span class="quiet-window-moon"></span><i class="quiet-star q-one"></i><i class="quiet-star q-two"></i></div><div class="quiet-bed"><div class="quiet-pillow"></div><svg viewBox="0 0 220 240"><use href="#bear-sleep"></use></svg><div class="quiet-blanket"></div></div><span class="quiet-glow"></span></div>
+          <div class="quiet-actions"><button class="sound-button" type="button" id="ambient-toggle" aria-pressed="false"><span class="sound-icon" aria-hidden="true">♫</span><span id="ambient-label">Turn on soft room sound</span></button><div class="button-row"><button class="button button-secondary" type="button" data-action="letter-list">Read a letter</button><button class="button button-secondary" type="button" data-go="bedtime">Bedtime</button><button class="button button-primary" type="button" data-go="home">Back to bedroom</button></div></div>
+        </div>
+      </section>
+
+      <section class="screen" id="screen-bedtime" data-screen="bedtime" aria-labelledby="bedtime-title" hidden>
+        <div class="simple-layout bedtime-layout">
+          <div class="bedtime-art"><div class="bedtime-moon"></div><svg viewBox="0 0 220 240" aria-hidden="true"><use href="#bear-sleep"></use></svg><span class="bedtime-star star-a">✦</span><span class="bedtime-star star-b">✧</span></div>
+          <p class="eyebrow">The day can be done</p><h1 id="bedtime-title">You can rest, Mochi.</h1><p class="screen-intro">You don’t have to fall asleep right away. You can get comfy, keep the screen dim, and take all the time you need.</p>
+          <article class="bedtime-card"><p data-message="bedtimeCard"></p><span class="card-flower" aria-hidden="true">✿</span></article>
+          <div class="button-row"><button class="button button-secondary" type="button" data-go="quiet">Stay a little longer</button><button class="button button-primary" type="button" data-action="goodnight">Goodnight, little bear. 🌙</button></div>
+        </div>
+      </section>
+
+      <section class="screen" id="screen-goodnight" data-screen="goodnight" aria-labelledby="goodnight-title" hidden>
+        <div class="simple-layout goodnight-layout">
+          <div class="goodnight-scene"><div class="goodnight-moon"></div><span class="gn-star gn-a"></span><span class="gn-star gn-b"></span><span class="gn-star gn-c"></span><svg viewBox="0 0 220 240" aria-hidden="true"><use href="#bear-sleep"></use></svg><div class="night-hill"></div></div>
+          <h1 id="goodnight-title">Goodnight, Mochi.</h1><p class="screen-intro" data-message="goodnightMessage"></p>
+          <button class="button button-secondary" type="button" data-go="home">Back to bedroom</button>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="settings-dialog" aria-labelledby="settings-title">
+      <form method="dialog"><button class="icon-button dialog-close" aria-label="Close settings">×</button></form>
+      <p class="eyebrow">Only if you want</p><h2 id="settings-title">Little settings</h2><p class="settings-intro">These are just for this device. Sound starts off.</p>
+      <label class="setting-row"><span><strong>Soft room sound</strong><small>Gentle, locally made night ambience</small></span><input type="checkbox" id="setting-sound"><span class="switch" aria-hidden="true"></span></label>
+      <label class="setting-row"><span><strong>Interaction chimes</strong><small>A tiny note when you choose something</small></span><input type="checkbox" id="setting-chimes"><span class="switch" aria-hidden="true"></span></label>
+      <label class="setting-row"><span><strong>Dim screen</strong><small>Make the room a little darker</small></span><input type="checkbox" id="setting-dim"><span class="switch" aria-hidden="true"></span></label>
+    </dialog>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
